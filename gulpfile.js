@@ -27,6 +27,6 @@ gulp.task('concat', ['sass', 'stylus'],function(){
 })
 
 gulp.task('watch', ['concat'], function(){
-  gulp.watch('./pre/*.scss', ['sass']);
-  gulp.watch('./pre/*.styl', ['stylus']);
+  gulp.watch('./pre/*.scss', ['sass', 'concat']);
+  gulp.watch('./pre/*.styl', ['stylus', 'concat']);
 })

@@ -4,3 +4,7 @@
 .secondaryClass {
   background-color: 256E 5E;
 }
+.thirdClass {
+  borderColor: 3C 3176;
+  font-color: mainClass;
+}
