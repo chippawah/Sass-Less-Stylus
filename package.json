@@ -1,0 +1,24 @@
+{
+  "name": "sass-less-stylus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chippawah/Sass-Less-Stylus.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chippawah/Sass-Less-Stylus/issues"
+  },
+  "homepage": "https://github.com/chippawah/Sass-Less-Stylus#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-stylus": "^2.2.0"
+  }
+}
