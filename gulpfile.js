@@ -20,6 +20,6 @@ gulp.task('stylus', function(){
 })
 
 gulp.task('watch', ['sass', 'stylus'], function(){
-  gulp.watch('./pre/*.sass', ['sass']);
+  gulp.watch('./pre/*.scss', ['sass']);
   gulp.watch('./pre/*.styl', ['stylus']);
 })
