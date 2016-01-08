@@ -20,5 +20,8 @@
     "gulp": "^3.9.0",
     "gulp-sass": "^2.1.1",
     "gulp-stylus": "^2.2.0"
+  },
+  "dependencies": {
+    "gulp-concat-css": "^2.2.0"
   }
 }
