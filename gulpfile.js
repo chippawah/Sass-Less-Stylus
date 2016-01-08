@@ -2,7 +2,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     stylus = require('gulp-stylus');
 
-gulp.task('default', ['sass', 'stylus'])
+gulp.task('default', ['watch'])
 
 gulp.task('sass', function(){
   gulp.src('./pre/*.scss')
@@ -17,4 +17,9 @@ gulp.task('stylus', function(){
   gulp.src('./pre/*.styl')
     .pipe(stylus())
     .pipe(gulp.dest('./post'))
+})
+
+gulp.task('watch', ['sass', 'stylus'], function(){
+  gulp.watch('./pre/*.sass', ['sass']);
+  gulp.watch('./pre/*.styl', ['stylus']);
 })
