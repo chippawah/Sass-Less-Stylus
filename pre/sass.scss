@@ -1,6 +1,6 @@
 //variables
 $font-stack:    Helvetica, sans-serif;
-$primary-color: #393;
+$primary-color: #333;
 
 body {
   font: 100% $font-stack;
@@ -20,14 +20,17 @@ body {
           border-radius: $radius;
 }
 
-.box { @include border-radius(10px); }
+.box { 
+    @include border-radius(10px); 
+    border: 1px solid black;
+    padding: 10px;
+}
 
 
 //extenders
 .message {
   border: 1px solid #ccc;
   padding: 10px;
-  color: #333;
 }
 
 .success {
@@ -57,4 +60,32 @@ article[role="main"] {
 aside[role="complimentary"] {
   float: right;
   width: 300px / 960px * 100%;
+}
+
+
+// actual styles
+
+$theme-color: #ff6347;
+.body{
+    padding: 20px;
+}
+div{
+    margin: 10px;
+}
+.header{
+    background-color: $theme-color * .9;
+    padding: 20px;
+}
+.sample1{
+    background-color: ($theme-color * .6);
+    padding: 5px;
+    color: white;
+}
+.sample2{
+    background-color: ($theme-color * .3);
+    @extend .sample1;
+}
+.sample3{
+    background-color: ($theme-color * 1.9);
+    @extend .sample2;
 }

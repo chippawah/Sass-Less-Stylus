@@ -19,12 +19,13 @@ nav a {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
-  border-radius: 10px; }
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px; }
 
 .message, .success, .error, .warning {
   border: 1px solid #ccc;
-  padding: 10px;
-  color: #333; }
+  padding: 10px; }
 
 .success {
   border-color: green; }
@@ -53,12 +54,16 @@ div {
   margin: 10px; }
 
 .header {
-  background-color: #9cc2cf;
+  background-color: #e65940;
   padding: 20px; }
 
 .sample1, .sample2, .sample3 {
-  background-color: #68828a;
-  padding: 5px; }
+  background-color: #993b2b;
+  padding: 5px;
+  color: white; }
 
 .sample2, .sample3 {
-  background-color: #344145; }
+  background-color: #4d1e15; }
+
+.sample3 {
+  background-color: #ffbc87; }

@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
-    stylus = require('gulp-stylus');
+    // stylus = require('gulp-stylus');
 
 gulp.task('default', ['watch'])
 
@@ -13,13 +13,13 @@ gulp.task('sass', function(){
     .pipe(gulp.dest('./post'))
 })
 
-gulp.task('stylus', function(){
-  gulp.src('./pre/*.styl')
-    .pipe(stylus())
-    .pipe(gulp.dest('./post'))
-})
+// gulp.task('stylus', function(){
+//   gulp.src('./pre/*.styl')
+//     .pipe(stylus())
+//     .pipe(gulp.dest('./post'))
+// })
 
-gulp.task('watch', ['sass', 'stylus'], function(){
+gulp.task('watch', ['sass'], function(){
   gulp.watch('./pre/*.scss', ['sass']);
-  gulp.watch('./pre/*.styl', ['stylus']);
+//   gulp.watch('./pre/*.styl', ['stylus']);
 })
